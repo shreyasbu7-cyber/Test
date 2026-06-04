@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("clone") {
             steps {
-                git 'https://github.com/viswkum/hellow-wrld.git'
+                git 'https://github.com/shreyasbu7-cyber/Test.git'
             }
         }
         stage("build") {
