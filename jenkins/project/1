@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    environment {
+        APP_NAME = "demo-app"
+        ENV = "dev"
+        name = "kishor"
+    }
+
+    stages {
+        stage('Print Variables') {
+            steps {
+                sh 'echo Application Name: $APP_NAME'
+                sh 'echo Environment Name: $ENV'
+                sh 'echo Good Morning $name'
+            }
+        }
+    }
+}
